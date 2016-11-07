@@ -22,8 +22,9 @@ body {
 
 	                  
 #section1{
-	background-image: url("https://newevolutiondesigns.com/images/freebies/cool-wallpaper-10.jpg");
+	background-image: url("bg1.jpg");
     height: 600px;
+    background-color:red;
 } 
 
 #section1row1{
