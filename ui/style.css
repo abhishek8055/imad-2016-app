@@ -20,3 +20,54 @@ body {
     height: 200px;
 }
 
+	                  
+#section1{
+	background-image: url("tt_img/bg1.jpg");
+    height: 600px;
+} 
+
+#section1row1{
+    height:200px;
+}
+
+#para1{
+    font-size:30px;
+	color: white;
+	text-align:center;
+}
+
+#section1row2{
+    height:200px;
+
+}
+
+#section1row3{
+    height:200px;
+}
+.modal-header, h6, .close {
+    background-color: #5cb85c;
+    color:white !important;
+    text-align: center;
+    font-size: 30px;
+}
+
+.modal-footer {
+    background-color: #f9f9f9;
+}  
+
+
+#section2row1{
+    background-color: teal;
+}
+
+#section2heading{
+    font-size:40px;
+    color: white;
+	text-align:center; 
+						
+}
+
+#blogl{
+	background-image: url("tt_img/bg3.jpg");
+}
+
