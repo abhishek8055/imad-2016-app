@@ -1,156 +1,298 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>BlogSpot | An open Environment</title>
+  <title>BlogSpot | Be the Next</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+  
+  
   <style>
     
-    .navbar {
-      margin-bottom: 50px;
-      border-radius: 0;
-    }
-    
-    
-     .jumbotron {
-      margin-bottom: 0;
-    }
-   
-    
-    footer {
-	  background-color: #f2f2f2;
-      padding: 25px;
-    }
-	
-    .modal-header, h6, .close {
-       background-color: #5cb85c;
-       color:white !important;
-       text-align: center;
-       font-size: 30px;
-    }
-
-    .modal-footer {
-       background-color: #f9f9f9;
-    } 
-    
-    #blogp{
-        padding-top: 0px;
-        padding-bottom: 10px;
-    }
-	
-  </style>
-</head>
-<body>
-
-    <div class="jumbotron" id="blogp">
-        <div class="container text-center">
-            <h1>Blog Spot</h1>      
-            <p>Generate! Disseminate! Preserve!</p>
-        </div>
+	#body{
+	    margin:0px auto;
 		
-		<div class="container-fluid" id="BlogPost">		
-		<div class="col-md-12" align="center">
-            <button type="button" class="btn btn-success btn-lg" data-toggle="modal" data-target="#blogmodal" id="myBtn" >Post your Blog
-            !</button>
-            <div class="modal fade" id="blogmodal" role="dialog">
-                <div class="modal-dialog">   
-                    <div class="modal-content">
-                        <div class="modal-header" style="padding:35px 50px;">
-                            <button type="button" class="close" data-dismiss="modal">&times;</button>
-                            <h6><span class="glyphicon glyphicon-envelope"></span>&nbsp;Post your Blog here</h6>
-                        </div>
-                        <div class="modal-body" style="padding:40px 50px;">      
-                            <form role="form" method="POST" action="blog_post.php">
-                                <div class="form-group" align="left">
-                                    <label for="username"><span class="glyphicon glyphicon-user"></span>&nbsp;Name</label>
-                                    <input type="text" name="user" class="form-control" id="username" placeholder="Enter your name" required>
-                                </div>
-                                <div class="form-group" align="left">
-                                    <label for="comment"><span class="glyphicon glyphicon-comment"></span>&nbsp;Type here</label>
-								    <textarea class="form-control" name="blog" rows="5" placeholder="type here" id="comment" required></textarea>
-                                </div>
-           
-                                <button type="submit" name="submit" class="btn btn-success btn-block">
-				                    <span class="glyphicon glyphicon-flag"></span>Post
-				                </button>
-                            </form>						
-                        </div>
-                        <div class="modal-footer">
-                            <button type="submit" class="btn btn-danger btn-default pull-left" data-dismiss="modal">
-		                        <span class="glyphicon glyphicon-remove"></span>Cancel
-		                    </button>
-                        </div>
-                    </div>     
-                </div>
-            </div> 
-        </div>
+	}
+		
+	#maggie{
+	    background-color:whitesmoke;
+		margin-top:10px;
+		border:15px solid black;
+		background-image:url("bg2.jpg");
+	}
+	
+	#title{
+	    text-align: center;
+        font-size: 95px;
+        font-weight: bold;
+        font-family: initial;
+        margin-top: -15px;
+		color:#ccff33;
+	}
+	
+	#pope{
+	    font-size: 30px;
+        margin-top: -8px;
+        padding-left: 45px;
+		color: #ff6666;
+	}
+	
+	#navbar{
+        text-align:center;
+		font-size:20px;
+		margin-left: -25px;
+    }
+	
+    #navbar ul{
+	    list-style-type:none;
+		padding-top: 10px;
+    }
+	
+    #navbar ul li{
+	   display:inline;
+	   padding:10px;
+    }
+    #navbar ul li a {
+	    text-decoration:none;
+	    color:whitesmoke;
+		font-weight: bold;
+    }
+	
+    #navbar ul li a:hover {
+	    color:#ccff33;
+	    border-top:2px solid;
+	    border-bottom:2px solid;
+    }
+    
+	#quote{
+	    color: #ffb3b3;
+        font-size: 25px;
+        padding-left: 20px;
+        padding-top: 10px;
+        font-weight: bold;
+	}
+	
+	#rupee{
+	    margin-top: 20px;
+		margin-bottom:20px;
+	}
+	
+	#currency{
+	    color:yellow;
+        font-size: 28px;
+	}
+	
+	#blackmoney{
+	    color:red;
+	}
+	
+	#why{
+	    
+        text-align: right;
+        font-size:35px;
+        color:yellow;
+		padding-top:20px;
+	}
+	
+	#blogi{
+	    text-align:center;
+		padding-bottom:10px;
+	}	
+	
+	.fill {
+        display:flex;
+	    justify-content:center;
+	    align-items:center;
+	    overflow:hidden;
+    }
+	
+    .fill img {
+        flex-shrink:0;
+        width:100%;
+	    z-index: 2;
+        height:150px;
+    }
+	
+	#america{
+	    font-size: 30px;
+        color: #ccff33;
+        padding-top: 27px;
+	}
+	
+	#intro{
+	    color: white;
+        font-size: 34px;
+        margin-top: 20px;
+	}
+	
+	#blogger{
+	    margin-bottom:20px;
+	}
+	
+	#name{
+	    color: orange;
+        font-size: 40px;
+        font-weight: bold;
+	}
+	
+	#followme{
+	    color: magenta;
+        font-size: 25px;
+        font-weight: bold;
+	}
+	
+	#follow{
+	    margin-bottom: 15px;
+	}
+	
+	.exel {
+        display:flex;
+	    justify-content:center;
+	    align-items:center;
+	    overflow:hidden;
+    }
+	
+    .exel img {
+        flex-shrink:0;
+        width:100%;
+	    z-index: 2;
+        height:130px;
+		border-radius:50%;
+    }
+	
+	#union{
+	    font-size: 30px;
+        color:yellow;
+        padding-top:0px;
+	}
+	
+	#footer{
+	    margin-top:-16px;
+		color:black;
+	}
+	
+	#index{
+	    font-weight:bold;
+		margin-top: -1px;
+        margin-bottom: 0px;
+	}
+	
+	#open{
+	    margin-top:20px;
+		margin-bottom:20px;
+		text-align:center;
+	}
+	
+	.btn{
+	    font-size:20px;
+	}
+  </style>
+  
+</head>
+
+<body> 
+	<div class="container" id="maggie">
+	    <div id="navbar">
+            <ul>
+			    <li><a href="content.html">Popular Blogs</a></li>
+                <li><a href="#">Top Bloggers</a></li>
+                <li><a href="#">Top Blog Sites </a></li>
+                <li><a href="#">Blogger of the week </a></li>
+            </ul>
+        </div><hr>
+	
+	
+	    <div class="col-md-12 w3-hide-small" id="title">
+	        BlogSpot Magazine
 	    </div>
-    </div>
-	
-	
-
-    <nav class="navbar navbar-inverse">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>                        
-                </button>
-                <a class="navbar-brand" href="index.html">BlogSpot</a>
-            </div>
-            <div class="collapse navbar-collapse" id="myNavbar">
-                <ul class="nav navbar-nav">
-                    <li class="active"><a href="index.html"><span class="glyphicon glyphicon-home"></span></a></li>
-					<li><a href="#"><span class="glyphicon glyphicon-user"></span> Guest User</a></li>                                                        
-                </ul>
-                <ul class="nav navbar-nav navbar-right">
-				    <li><a href="login.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-				    <li><a href="signup.html"><span class="glyphicon glyphicon-grain"></span> Sign Up</a></li>			          
-                </ul>
-            </div>
-        </div>
-    </nav>
-
-    <div class="container">    
+		<div class="row">
+		    <div class="col-md-8 w3-hide-small"></div>
+		    <div class="col-md-4" id="pope">
+	            <b>Be the next</b>
+	        </div>
+		</div><hr>
+	      
+       
+		<div id="quote" class="w3-hide-small">
+		    <i>"There is a lack of talent in technology,</i><br>
+			<i>&nbsp;&nbsp;and we need to be encouraging kids in school to learn how to code.</i><br>
+			<i>&nbsp;&nbsp;We need to encourage computer science as a major.</i><br>
+			<i>&nbsp;&nbsp;We need to encourage entrepreneurism."</i>
+			<p align="right">-Abhishek Dwivedi</p>
+	    </div>
+        <div id="quote" class="w3-hide-large">
+			<i>"You could get an entire computer science education for free right now."</i>
+			<p align="right">-Abhishek Dwivedi</p>
+	    </div>
+		<div class="row">
+			<div class="col-md-4 w3-hide-small"></div>
+            <div class="col-md-8" id="why">
+			    <b>Why should i follow blogs?</b>
+			</div>
+	    </div>
         <div class="row">
-             <div class="col-xs-12 col-md-4" id="blog1" align="center"> 
-			    <div class="panel panel-default">
-				    <div class="panel-heading"><b>YourName</b></div>
-					<div class="panel-body">Your Blog will appeaer here!!</div>
-				</div>	
-			</div>	
-      
-            <div class="col-xs-12 col-md-4" id="blog1" align="center"> 
-			    <div class="panel panel-default">
-				    <div class="panel-heading"><b>YourName</b></div>
-					<div class="panel-body">Your Blog will appeaer here!!</div>
-				</div>	
-			</div>	
-    
-            <div class="col-xs-12 col-md-4" id="blog1" align="center"> 
-			    <div class="panel panel-default">
-				    <div class="panel-heading"><b>YourName</b></div>
-					<div class="panel-body">Your Blog will appeaer here!!</div>
-				</div>	
-			</div>	
+			<div class="col-md-8 w3-hide-small"></div>
+            <div class="col-md-2 col-xs-9 fill" id="blogi">
+			    <img src="blog8.png">
+			</div>
+			<div class="col-md-2 w3-hide-small"></div>
+	     </div>	
+		<div class="row" id="rupee">
+			<div class="col-md-2 col-xs-8 fill">
+			    <img src="logo3.png">		
+			</div>
+		    <div class="col-md-3" id="currency">
+				Surgical strike on <b id="blackmoney">BLACKMONEY?</b> 		
+			</div>
+			<div class="col-md-3 w3-hide-small"></div>
+            <div class="col-md-4" id="america">
+			    <b>Trumph wins and America lost?</b>
+			</div>			
         </div>
-    </div><br>
+		<div class="row">
+		    <div class="col-md-12" id="intro">Blogger who changed the pattern of blogs !</div>
+		</div>
+		<div class="row" id="blogger">
+		    <div class="col-md-3">
+			    <div id="name">Abhishek Dwivedi</div>
+				<div id="followme">Follow on:</div>			
+			    <div id="follow">
+			        <a href="https://www.facebook.com/d.abhishek03"><img src="fb.png"></a>&nbsp;&nbsp;
+			        <a href="https://www.linkedin.com/in/abhishek-dwivedi-a330a0b4"><img src="li.png"></a>&nbsp;&nbsp;
+			        <a href="https://plus.google.com/113900231296083878522"><img src="gp.png"></a>
+		        </div>
+			</div>	
+			<div class="col-md-2 col-xs-9 exel">
+			    <img src="cover2.jpg">
+			</div>
+			<div class="col-md-4 col-xs-12 w3-hide-small"></div>
+			<div class="col-md-3" id="union">
+			    <b>City Union Bank launches India’s first banking robot Lakshmi in Chennai</b>
+			</div>
+		</div>
+		<div class="row" id="footer">
+		    <div class="col-md-3">
+			    <b>Editor-ABHISHEK DWIVEDI</b>
+				<b>UserName-abhishek8055</b>
+			</div>
+			<div class="col-md-6 w3-hide-small"></div>
+			<div class="col-md-3">
+			    <h5 id="index">Cover page</h5>
+				<b>copyright @2016-17</b>
+			</div>
+		</div>
+		
+	</div>	
+
+    <div id="open">
+	    <a type="button" class="btn btn-success" href="content.html"><< Open Magazine >></a>
+	</div>	
+	
     
-	
-	
-	
-    <footer class="container-fluid text-center">
-        <p>Blog Spot Copyright</p>  
-        <form class="form-inline">Get membership :
-           <input type="email" class="form-control" size="50" placeholder="Email Address">
-           <button type="button" class="btn btn-danger">Sign Up</button>
-        </form>
-    </footer>
+
 
 </body>
 </html>
