@@ -13,7 +13,7 @@ app.get('/content.html', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'content.html'));
 });
 
-app.get('/ui/blog.html', function (req, res) {
+app.get('/blog.html', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'blog.html'));
 });
 
@@ -21,7 +21,7 @@ app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
 });
 
-app.get('/ui/bg2.jpg', function (req, res) {
+app.get('/bg2.jpg', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'bg2.jpg'));
 });
 
