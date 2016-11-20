@@ -17,6 +17,10 @@ app.get('/blog.html', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'blog.html'));
 });
 
+app.get('/blog.html', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'profile.html'));
+});
+
 app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
 });
@@ -26,7 +30,7 @@ app.get('/bg2.jpg', function (req, res) {
 });
 
 app.get('/bg3c.jpg', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'bg3c.jpg'));
+  res.sendFile(path.join(__dirname, 'ui', 'blog9.jpg'));
 });
 
 app.get('/blog8.png', function (req, res) {
