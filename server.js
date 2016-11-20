@@ -70,6 +70,10 @@ app.get('/me.jpg', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'me.jpg'));
 });
 
+app.get('/me.jpg', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'me2.jpg'));
+});
+
 app.get('/blog7.jpg', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'blog7.jpg'));
 });
