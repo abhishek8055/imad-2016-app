@@ -29,7 +29,7 @@ app.get('/bg2.jpg', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'bg2.jpg'));
 });
 
-app.get('/bg3c.jpg', function (req, res) {
+app.get('/blog9.png', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'blog9.png'));
 });
 
@@ -70,7 +70,7 @@ app.get('/me.jpg', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'me.jpg'));
 });
 
-app.get('/me.jpg', function (req, res) {
+app.get('/me2.jpg', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'me2.jpg'));
 });
 
