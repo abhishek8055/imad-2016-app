@@ -1,74 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Blog | BlogSpot </title>
+  <title>Profile | Abhishek Dwivedi</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
-  <style>	
-    .header{
-	     margin-top:20px;
-	    text-align:center;
-		font-size:25px;
-		font-weight:bold;
-	}
-	
-	.pope{
-	    text-align:center;
-		font-size:15px;
-		margin-bottom:30px;
-	}
-	
-	.navbar-inverse{
-	    margin-bottom:-1px;
-		background-color: orchid;
-		border-color:white;
-	}
-	
-	#brand{
-	    color:white;
-	}
+  <link rel="stylesheet" href="profile.css">
+  <style>
 
-	#date{
-		text-align: right;
-        padding-top: 20px;
+    .header{
+         margin-top:20px;
+        text-align:center;
+        font-size:25px;
+        font-weight:bold;
+    }
+    
+    .pope{
+        text-align:center;
+        font-size:15px;
+        margin-bottom:30px;
+    }
+    .navbar-inverse{
+        margin-bottom:-1px;
+        background-color: orchid;
+        border-color:white;
+    }
+
+    #brand{
+        color:white;
+    }
+   #myImg{
+       margin-top: 10px;
+       margin-bottom: 10px;
+   }
+
+   #name{
        font-weight: bold;
-	}
-	
-	.footer{
-	    background-color: #262626;
+      font-size: 18px;
+   }
+
+   #yellow{
+     background-color: yellow;
+   }
+    
+    .footer{
+        background-color: #262626;
         text-align: center;
         color: white;
         padding-top: 10px;
         padding-bottom: 10px;
-		margin-bottom:5px;
-		margin-top:10px;
-	}
-	
-	#xoxo{
-	    padding-bottom: 5px;
-        font-weight: bold;
-         color:whitesmoke;
-	}
-	
-	#copy{
-	    padding-top: 10px;
-        font-weight: bold;
+        margin-bottom:5px;
+        margin-top:30px;
+    }
+    
+    #xoxo{
         color:whitesmoke;
-	}
-	
+        padding-bottom: 5px;
+        font-weight: bold;
+    }
+    
+    #copy{
+        color:whitesmoke;
+        padding-top: 10px;
+        font-weight: bold;
+    }
+
   </style>
-</head>
+  
+<head>
 <body>
     <div class="container">
-	    <div>
-		    <div  class="header">BlogSpot</div>
-		    <div class="pope">Generate! Disseminate! Preserve!</div>
-		</div>	
-		<nav class="navbar navbar-inverse">
+        <div>
+            <div  class="header">BlogSpot</div>
+            <div class="pope">Generate! Disseminate! Preserve!</div>
+        </div>
+	    <nav class="navbar navbar-inverse">
             <div class="container-fluid">
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -76,57 +85,57 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>                        
                     </button>
+                    <a class="navbar-brand" id ="brand" href="/">BlogSpot</a>
                 </div>
                 <div class="collapse navbar-collapse" id="myNavbar">
                     <ul class="nav navbar-nav">
                         <li><a href="/" id ="brand"><span class="glyphicon glyphicon-home"></span></a></li>
-					    <li><a href="content.html" id ="brand"><span class="glyphicon glyphicon-time"></span> Recent Blogs</a></li>                                                        
+                        <li><a href="content.html" id ="brand"><span class="glyphicon glyphicon-time"></span> Recent Blogs</a></li>                                                        
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
-				        <li><a href="http://brainblogger.com/" id ="brand"><span class="glyphicon glyphicon-grain"></span> Popular Blogs</a></li>
-				        <li><a href="https://indianbloggers.org/" id ="brand">Featured Indian Bloggers</a></li>
-				        <li><a href="https://indianbloggers.org/blogs/technology/" id ="brand">Technology Blogs</a></li>
-				        <li><a href="https://indianbloggers.org/blogs/travel/" id ="brand">Travel Blogs</a></li>
-				        <li><a href="https://indianbloggers.org/youtube/fashion/" id ="brand">Fashion Blogs</a></li>			          
+                        <li><a href="http://brainblogger.com/" id ="brand"><span class="glyphicon glyphicon-grain"></span> Popular Blogs</a></li>
+                        <li><a href="https://indianbloggers.org/" id ="brand">Featured Indian Bloggers</a></li>
+                        <li><a href="https://indianbloggers.org/blogs/technology/" id ="brand">Technology Blogs</a></li>
+                        <li><a href="https://indianbloggers.org/blogs/travel/" id ="brand">Travel Blogs</a></li>
+                        <li><a href="https://indianbloggers.org/youtube/fashion/" id ="brand">Fashion Blogs</a></li>                      
                     </ul>
                 </div>
             </div>
         </nav>
-		<div class="w3-container">
-		    <div class="row">
-		    	<div class="col-md-6 col-xs-12"><h2>Responsive Image</h2></div>
-		    	<div class="col-md-6 col-xs-12" id="date">21/11/2016</div>
-		    </div>
-            <h4>An image can be set to automatically resize itself to fit the size of its container.
-                If you want the image to scale down if it has to, but never scale up to be larger 
-				than its original size, use the w3-image class.
-			</h4>
-            <img src="blog7.jpg" alt="Lights" class="w3-image" width="600" height="400">
-            <p>Resize the browser window to see the effect.</p>
-			 <h4>An image can be set to automatically resize itself to fit the size of its container.
-                If you want the image to scale down if it has to, but never scale up to be larger 
-				than its original size, use the w3-image class.
-				An image can be set to automatically resize itself to fit the size of its container.
-                If you want the image to scale down if it has to, but never scale up to be larger 
-				than its original size, use the w3-image class.
-				An image can be set to automatically resize itself to fit the size of its container.
-                If you want the image to scale down if it has to, but never scale up to be larger 
-				than its original size, use the w3-image class.
-			</h4>
-        </div>
-		<div class="footer">
-		    <div id="xoxo">
-			    follow on:
-			</div>
-		    <div id="follow">
-			    <a href="https://www.facebook.com/d.abhishek03"><img src="fb.png"></a>&nbsp;&nbsp;
-			    <a href="https://www.linkedin.com/in/abhishek-dwivedi-a330a0b4"><img src="li.png"></a>&nbsp;&nbsp;
-			    <a href="https://plus.google.com/113900231296083878522"><img src="gp.png"></a>
-		    </div>
-			<div id="copy">
-			    Copyright reserved @2016-17
-			</div>
-		</div>		
+	
+	    <div class="row" id="myImg">
+            <div class="col-md-4 w3-hide-small"></div>
+	        <div class="col-md-4"> 
+	            <img src="me2.jpg" alt="abhishek" class="w3-image" width="300" height="100">
+            </div>
+             <div class="col-md-4 w3-hide-small"></div>
+        </div><hr>
+        <div id="name"><b id="yellow">Abhishek Dwivedi</b></div> 
+        <div class="row" style="margin-top: 10px">
+            <div class="col-md-6 col-xs-12">
+                <p><b>GitHub username -:</b>abhishek8055</p>
+                <p><b>App URL  -:</b><a href="http://abhishek8055.imad.hasura-app.io/"> http://abhishek8055.imad.hasura-app.io/</a></p>
+                <p><b>Website -:</b><a href="http://odigos.in/"> Odigos.in</a></p>
+                <p><b>Hometown -:</b> Allahabad UP</p>
+                <p><b>College -:</b> Bundelkhand Institute of Engineering & Technology Jhansi UP</p>
+                <p><b>Branch -:</b> Computer Science & Engineering</p>
+                <p><b>Batch -:</b> 2014-2018</p>
+                <p><b>Year -:</b> 3rd Year</p>
+            </div>
+        </div><hr>
+        <div class="footer">
+            <div id="xoxo">
+                follow on:
+            </div>
+            <div id="follow">
+                <a href="https://www.facebook.com/d.abhishek03"><img src="fb.png"></a>&nbsp;&nbsp;
+                <a href="https://www.linkedin.com/in/abhishek-dwivedi-a330a0b4"><img src="li.png"></a>&nbsp;&nbsp;
+                <a href="https://plus.google.com/113900231296083878522"><img src="gp.png"></a>
+            </div>
+            <div id="copy">
+                Copyright reserved @2016-17
+            </div>
+        </div>    
 	</div>
 </body>
 </html>
