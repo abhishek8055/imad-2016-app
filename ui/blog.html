@@ -31,6 +31,12 @@
 	#brand{
 	    color:white;
 	}
+
+	#date{
+		text-align: right;
+        padding-top: 20px;
+       font-weight: bold;
+	}
 	
 	.footer{
 	    background-color: #262626;
@@ -87,7 +93,10 @@
             </div>
         </nav>
 		<div class="w3-container">
-            <h2>Responsive Image</h2>
+		    <div class="row">
+		    	<div class="col-md-6 col-xs-12"><h2>Responsive Image</h2></div>
+		    	<div class="col-md-6 col-xs-12" id="date">21/11/2016</div>
+		    </div>
             <h4>An image can be set to automatically resize itself to fit the size of its container.
                 If you want the image to scale down if it has to, but never scale up to be larger 
 				than its original size, use the w3-image class.
