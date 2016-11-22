@@ -123,7 +123,7 @@ function createTemplate (data) {
 		    	<div class="col-md-6 col-xs-12" id="date">${date.toDateString()}</div>
 		    </div>
             <h4>${description_one}</h4>
-            <img src="/ui/articles/${image}" alt="${title}" class="w3-image" width="600" height="400">
+            <img src="${image}" alt="${title}" class="w3-image" width="600" height="400">
 			 <h4>${description_two}</h4>
         </div>
 		<div class="footer">
