@@ -105,7 +105,7 @@ function createTemplate (data) {
                 <div class="collapse navbar-collapse" id="myNavbar">
                     <ul class="nav navbar-nav">
                         <li><a href="/" id ="brand"><span class="glyphicon glyphicon-home"></span></a></li>
-					    <li><a href="content.html" id ="brand"><span class="glyphicon glyphicon-time"></span> Recent Blogs</a></li>                                                        
+					    <li><a href="/content.html" id ="brand"><span class="glyphicon glyphicon-time"></span> Recent Blogs</a></li>                                                        
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
 				        <li><a href="http://brainblogger.com/" id ="brand"><span class="glyphicon glyphicon-grain"></span> Popular Blogs</a></li>
