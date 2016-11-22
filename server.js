@@ -253,6 +253,14 @@ app.get('/force.jpg', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'force.jpg'));
 });
 
+app.get('/flipkart.jpg', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'flipkart.jpg'));
+});
+
+app.get('/router.jpg', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'router.jpg'));
+});
+
 app.get('/router.jpg', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'router.jpg'));
 });
