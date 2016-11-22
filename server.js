@@ -119,8 +119,8 @@ function createTemplate (data) {
         </nav>
 		<div class="w3-container">
 		    <div class="row">
-		    	<div class="col-md-6 col-xs-12"><h2>${heading}</h2></div>
-		    	<div class="col-md-6 col-xs-12" id="date">${date.toDateString()}</div>
+		    	<div class="col-md-9 col-xs-12"><h2>${heading}</h2></div>
+		    	<div class="col-md-3 col-xs-12" id="date">${date.toDateString()}</div>
 		    </div>
             <h4>${description_one}</h4>
             <img src="/${image}" alt="${title}" class="w3-image" width="600" height="400">
