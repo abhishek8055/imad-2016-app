@@ -131,9 +131,9 @@ function createTemplate (data) {
 			    follow on:
 			</div>
 		    <div id="follow">
-			    <a href="https://www.facebook.com/d.abhishek03"><img src="/ui/fb.png"></a>&nbsp;&nbsp;
-			    <a href="https://www.linkedin.com/in/abhishek-dwivedi-a330a0b4"><img src="/ui/li.png"></a>&nbsp;&nbsp;
-			    <a href="https://plus.google.com/113900231296083878522"><img src="/ui/gp.png"></a>
+			    <a href="https://www.facebook.com/d.abhishek03"><img src="/fb.png"></a>&nbsp;&nbsp;
+			    <a href="https://www.linkedin.com/in/abhishek-dwivedi-a330a0b4"><img src="/li.png"></a>&nbsp;&nbsp;
+			    <a href="https://plus.google.com/113900231296083878522"><img src="/gp.png"></a>
 		    </div>
 			<div id="copy">
 			    Copyright reserved @2016-17
