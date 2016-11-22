@@ -200,11 +200,23 @@ app.get('/fb.png', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'fb.png'));
 });
 
+app.get('/ui/fb.png', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'fb.png'));
+});
+
 app.get('/gp.png', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'gp.png'));
 });
 
+app.get('/ui/gp.png', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'gp.png'));
+});
+
 app.get('/li.png', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'li.png'));
+});
+
+app.get('/ui/li.png', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'li.png'));
 });
 
@@ -232,9 +244,6 @@ app.get('/blog7.jpg', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'blog7.jpg'));
 });
 
-app.get('/ui/fb.png', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'fb.png'));
-});
 
 var port = 8080; // Use 8080 for local development because you might already have apache running on 80
 app.listen(8080, function () {
