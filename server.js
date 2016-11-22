@@ -196,11 +196,6 @@ app.get('/blog8.png', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'blog8.png'));
 });
 
-app.get('/cover2.jpg', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'cover2.jpg'));
-});
-
-
 app.get('/fb.png', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'fb.png'));
 });
