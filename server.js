@@ -148,8 +148,8 @@ function createTemplate (data) {
 
 var pool = new Pool(config);
 
-app.get('/articles/:articlesName', function (req, res) {
-  pool.query("SELECT * FROM articles WHERE title = $1", [req.params.articlesName], function (err, result) {
+app.get('/articles/:BlogName', function (req, res) {
+  pool.query("SELECT * FROM articles WHERE title = $1", [req.params.BlogName], function (err, result) {
     if (err) {
         res.status(500).send(err.toString());
     } else {
@@ -157,7 +157,7 @@ app.get('/articles/:articlesName', function (req, res) {
             res.status(404).send('Article not found');
         } else {
             var articleData = result.rows[0];
-            res.send(createTemplate(articlesData));
+            res.send(createTemplate(articleData));
         }
     }
   });
