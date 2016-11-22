@@ -131,7 +131,7 @@ function createTemplate (data) {
 			    follow on:
 			</div>
 		    <div id="follow">
-			    <a href="https://www.facebook.com/d.abhishek03"><img src="https://github.com/abhishek8055/imad-2016-app/blob/master/ui/fb.png"></a>&nbsp;&nbsp;
+			    <a href="https://www.facebook.com/d.abhishek03"><img src="/ui/fb.png"></a>&nbsp;&nbsp;
 			    <a href="https://www.linkedin.com/in/abhishek-dwivedi-a330a0b4"><img src="li.png"></a>&nbsp;&nbsp;
 			    <a href="https://plus.google.com/113900231296083878522"><img src="gp.png"></a>
 		    </div>
@@ -230,6 +230,10 @@ app.get('/me2.jpg', function (req, res) {
 
 app.get('/blog7.jpg', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'blog7.jpg'));
+});
+
+app.get('/ui/fb.png', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'fb.png'));
 });
 
 var port = 8080; // Use 8080 for local development because you might already have apache running on 80
