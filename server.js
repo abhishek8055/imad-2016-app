@@ -200,15 +200,7 @@ app.get('/fb.png', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'fb.png'));
 });
 
-app.get('/ui/fb.png', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'fb.png'));
-});
-
 app.get('/gp.png', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'gp.png'));
-});
-
-app.get('/ui/gp.png', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'gp.png'));
 });
 
@@ -216,9 +208,6 @@ app.get('/li.png', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'li.png'));
 });
 
-app.get('/ui/li.png', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'li.png'));
-});
 
 app.get('/item1.jpg', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'item1.jpg'));
