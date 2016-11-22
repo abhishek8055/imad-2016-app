@@ -188,8 +188,8 @@ app.get('/bg2.jpg', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'bg2.jpg'));
 });
 
-app.get('/blog9.png', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'blog9.png'));
+app.get('/blog9.jpg', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'blog9.jpg'));
 });
 
 app.get('/blog8.png', function (req, res) {
