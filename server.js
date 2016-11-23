@@ -265,6 +265,7 @@ app.get('/router.jpg', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'router.jpg'));
 });
 
+
 app.get('/ins.jpg', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'ins.jpg'));
 });
