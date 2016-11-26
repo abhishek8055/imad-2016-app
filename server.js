@@ -447,12 +447,12 @@ app.get('/iot.jpg', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'iot.jpg'));
 });
 
-app.get('/cat2.png', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'cat2.png'));
-});
-
 app.get('/Laravel.jpg', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'Laravel.jpg'));
+});
+
+app.get('/cat2.png', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'cat2.png'));
 });
 
 app.get('/global.jpg', function (req, res) {
