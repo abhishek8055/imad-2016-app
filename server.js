@@ -21,6 +21,8 @@ function createTemplate (data) {
     var description_one = data.description_one;
     var description_two = data.description_two;
     var image = data.image;
+    var previous = data.previous;
+    var next = data.next;
     
     var htmlTemplate = `
       <!DOCTYPE html>
@@ -134,10 +136,10 @@ function createTemplate (data) {
         </div>
         <div id="open" class="row">
             <div class="col-md-6 col-xs-6">
-	            <a type="button" class="btn btn-success" href="#">Previous Blog</a>
+	            <a type="button" class="btn btn-success" href="${previous}">Previous Blog</a>
 	        </div>
 	        <div class="col-md-6 col-xs-6">
-	            <a type="button" class="btn btn-success" href="#">Next Blog</a>
+	            <a type="button" class="btn btn-success" href="${next}">Next Blog</a>
 	        </div>
 	    </div>
 		<div class="footer">
@@ -162,8 +164,8 @@ function createTemplate (data) {
 
 var pool = new Pool(config);
 
-app.get('/articles/:BlogName', function (req, res) {
-  pool.query("SELECT * FROM articles WHERE title = $1", [req.params.BlogName], function (err, result) {
+app.get('/geeks/:BlogName', function (req, res) {
+  pool.query("SELECT * FROM geeks WHERE title = $1", [req.params.BlogName], function (err, result) {
     if (err) {
         res.status(500).send(err.toString());
     } else {
@@ -177,6 +179,95 @@ app.get('/articles/:BlogName', function (req, res) {
   });
 });
 
+app.get('/geeks/:BlogName', function (req, res) {
+  pool.query("SELECT * FROM geeks WHERE title = $1", [req.params.BlogName], function (err, result) {
+    if (err) {
+        res.status(500).send(err.toString());
+    } else {
+        if (result.rows.length === 0) {
+            res.status(404).send('Article not found');
+        } else {
+            var articleData = result.rows[0];
+            res.send(createTemplate(articleData));
+        }
+    }
+  });
+});
+
+app.get('/technology/:BlogName', function (req, res) {
+  pool.query("SELECT * FROM technology WHERE title = $1", [req.params.BlogName], function (err, result) {
+    if (err) {
+        res.status(500).send(err.toString());
+    } else {
+        if (result.rows.length === 0) {
+            res.status(404).send('Article not found');
+        } else {
+            var articleData = result.rows[0];
+            res.send(createTemplate(articleData));
+        }
+    }
+  });
+});
+
+app.get('/environment/:BlogName', function (req, res) {
+  pool.query("SELECT * FROM environment WHERE title = $1", [req.params.BlogName], function (err, result) {
+    if (err) {
+        res.status(500).send(err.toString());
+    } else {
+        if (result.rows.length === 0) {
+            res.status(404).send('Article not found');
+        } else {
+            var articleData = result.rows[0];
+            res.send(createTemplate(articleData));
+        }
+    }
+  });
+});
+
+app.get('/politics/:BlogName', function (req, res) {
+  pool.query("SELECT * FROM politics WHERE title = $1", [req.params.BlogName], function (err, result) {
+    if (err) {
+        res.status(500).send(err.toString());
+    } else {
+        if (result.rows.length === 0) {
+            res.status(404).send('Article not found');
+        } else {
+            var articleData = result.rows[0];
+            res.send(createTemplate(articleData));
+        }
+    }
+  });
+});
+
+app.get('/motivation/:BlogName', function (req, res) {
+  pool.query("SELECT * FROM motivation WHERE title = $1", [req.params.BlogName], function (err, result) {
+    if (err) {
+        res.status(500).send(err.toString());
+    } else {
+        if (result.rows.length === 0) {
+            res.status(404).send('Article not found');
+        } else {
+            var articleData = result.rows[0];
+            res.send(createTemplate(articleData));
+        }
+    }
+  });
+});
+
+app.get('/bollywood/:BlogName', function (req, res) {
+  pool.query("SELECT * FROM bollywood WHERE title = $1", [req.params.BlogName], function (err, result) {
+    if (err) {
+        res.status(500).send(err.toString());
+    } else {
+        if (result.rows.length === 0) {
+            res.status(404).send('Article not found');
+        } else {
+            var articleData = result.rows[0];
+            res.send(createTemplate(articleData));
+        }
+    }
+  });
+});
 
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
@@ -244,15 +335,6 @@ app.get('/gp.png', function (req, res) {
 
 app.get('/li.png', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'li.png'));
-});
-
-
-app.get('/item1.jpg', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'item1.jpg'));
-});
-
-app.get('/item2.jpg', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'item2.jpg'));
 });
 
 app.get('/logo3.png', function (req, res) {
