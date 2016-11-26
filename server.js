@@ -92,6 +92,19 @@ function createTemplate (data) {
 	   	    margin-bottom:20px;
 	     	text-align:center;
     	}
+    	
+    	#fname{
+        font-size: 30px;
+        font-weight: bold;
+        padding-top: 20px;
+        color: teal;
+	}
+
+	#nname{
+         padding-top: 22px;
+         color: teal;
+         font-weight: bold;
+	}
 	
       </style>
       </head>
@@ -158,19 +171,30 @@ function createTemplate (data) {
 	            <a type="button" class="btn btn-success" href="${next}">Next Blog</a>
 	        </div>
 	    </div>
-		<div class="footer">
-		    <div id="xoxo">
-			    follow on:
-			</div>
-		    <div id="follow">
-			    <a href="https://www.facebook.com/d.abhishek03"><img src="/fb.png"></a>&nbsp;&nbsp;
-			    <a href="https://www.linkedin.com/in/abhishek-dwivedi-a330a0b4"><img src="/li.png"></a>&nbsp;&nbsp;
-			    <a href="https://plus.google.com/113900231296083878522"><img src="/gp.png"></a>
+		<div class="row footer">
+		    <div class="col-md-4 col-xs-12" id="fname">
+		    	<span>BlogSpot<span>
 		    </div>
-			<div id="copy">
-			    Copyright reserved @2016-17
-			</div>
-		</div>		
+
+		    <div class="col-md-4 col-xs-12">
+		        <div id="xoxo">
+			        follow on:
+			    </div>
+		        <div id="follow">
+			        <a href="https://www.facebook.com/d.abhishek03"><img src="fb.png"></a>&nbsp;&nbsp;
+			        <a href="https://www.linkedin.com/in/abhishek-dwivedi-a330a0b4"><img src="li.png"></a>&nbsp;&nbsp;
+			        <a href="https://plus.google.com/113900231296083878522"><img src="gp.png"></a>
+		        </div>
+			    <div id="copy">
+			        Copyright reserved @2016-17
+			    </div>
+		    </div>
+		    <div class="col-md-4 col-xs-12" id="nname">
+		    	<p><b>Abhishek Dwivedi</b></p>
+		    	<p>Email id: abhishekd911@gmail.com</p>
+		    </div>		
+	    </div>
+	    
 	  </div>
       </body>
      </html>
