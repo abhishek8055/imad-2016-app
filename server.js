@@ -415,16 +415,16 @@ app.get('/sass.jpg', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'sass.jpg'));
 });
 
+app.get('/arctic.jpg', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'arctic.jpg'));
+});
+
 app.get('/up.jpg', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'up.jpg'));
 });
 
 app.get('/organic.jpg', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'organic.jpg'));
-});
-
-app.get('/arctic.jpg', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'arctic.jpg'));
 });
 
 var port = 8080; // Use 8080 for local development because you might already have apache running on 80
