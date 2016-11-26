@@ -84,6 +84,12 @@ function createTemplate (data) {
           font-weight: bold;
           color:whitesmoke;
 	    }
+	    
+	    #open{
+	        margin-top:20px;
+	   	    margin-bottom:20px;
+	     	text-align:center;
+    	}
 	
       </style>
       </head>
@@ -126,6 +132,14 @@ function createTemplate (data) {
             <img src="/${image}" alt="${title}" class="w3-image" width="600" height="400">
 			 <h4>${description_two}</h4>
         </div>
+        <div id="open" class="row">
+            <div class="col-md-6 col-xs-6">
+	            <a type="button" class="btn btn-success" href="#">Previous Blog</a>
+	        </div>
+	        <div class="col-md-6 col-xs-6">
+	            <a type="button" class="btn btn-success" href="#">Next Blog</a>
+	        </div>
+	    </div>
 		<div class="footer">
 		    <div id="xoxo">
 			    follow on:
