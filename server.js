@@ -202,6 +202,30 @@ app.get('/bg2.jpg', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'bg2.jpg'));
 });
 
+app.get('/cat4.png', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'cat4.png'));
+});
+
+app.get('/cat5.png', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'cat5.png'));
+});
+
+app.get('/cat7.png', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'cat7.png'));
+});
+
+app.get('/cat8.png', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'cat8.png'));
+});
+
+app.get('/cat9.jpg', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'cat9.jpg'));
+});
+
+app.get('/cat11.png', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'cat11.png'));
+});
+
 app.get('/blog9.jpg', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'blog9.jpg'));
 });
