@@ -415,6 +415,26 @@ app.get('/sass.jpg', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'sass.jpg'));
 });
 
+app.get('/insp1.jpg', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'insp1.jpg'));
+});
+
+app.get('/insp2.jpg', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'insp2.jpg'));
+});
+
+app.get('/insp3.jpg', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'insp3.jpg'));
+});
+
+app.get('/insp4.jpg', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'insp4.jpg'));
+});
+
+app.get('/insp5.jpg', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'insp5.jpg'));
+});
+
 app.get('/arctic.jpg', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'arctic.jpg'));
 });
