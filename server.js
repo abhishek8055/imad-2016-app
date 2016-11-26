@@ -435,6 +435,10 @@ app.get('/insp5.jpg', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'insp5.jpg'));
 });
 
+app.get('/iot.jpg', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'iot.jpg'));
+});
+
 app.get('/arctic.jpg', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'arctic.jpg'));
 });
