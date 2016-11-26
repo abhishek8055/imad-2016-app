@@ -279,8 +279,8 @@ app.get('/politics/:BlogName', function (req, res) {
   });
 });
 
-app.get('/motivation/:BlogName', function (req, res) {
-  pool.query("SELECT * FROM motivation WHERE title = $1", [req.params.BlogName], function (err, result) {
+app.get('/motivational/:BlogName', function (req, res) {
+  pool.query("SELECT * FROM motivational WHERE title = $1", [req.params.BlogName], function (err, result) {
     if (err) {
         res.status(500).send(err.toString());
     } else {
