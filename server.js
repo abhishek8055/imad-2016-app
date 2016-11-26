@@ -443,6 +443,9 @@ app.get('/ruby.jpg', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'ruby.jpg'));
 });
 
+app.get('/iot.jpg', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'iot.jpg'));
+});
 
 app.get('/Laravel.jpg', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'Laravel.jpg'));
@@ -466,14 +469,6 @@ app.get('/insp2.jpg', function (req, res) {
 
 app.get('/insp3.jpg', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'insp3.jpg'));
-});
-
-app.get('/insp4.jpg', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'insp4.jpg'));
-});
-
-app.get('/iot.jpg', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'iot.jpg'));
 });
 
 app.get('/cat3.png', function (req, res) {
