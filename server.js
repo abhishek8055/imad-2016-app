@@ -147,7 +147,8 @@ function createTemplate (data) {
 				                Environment Blogs
 				            </a>
 				        </li>
-				        <li><a href="http://abhishek8055.imad.hasura-app.io/motivation/Blog%20%7C%20Potatoes,%20Eggs,%20and%20Coffee%20Beans" id ="brand">
+				        <li>
+				        <a href="http://abhishek8055.imad.hasura-app.io/motivational/Blog%20%7C%20How%20to%20Improve%20Life" id ="brand">
 				            Motivational Blogs</a>
 				        </li>			          
                     </ul>
